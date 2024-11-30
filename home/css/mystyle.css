@@ -1,13 +1,92 @@
 body {
-    background-color: lightblue;
+  background-color: black;
+}
+
+h1 {
+  color: hotpink;
+  text-align: center;
+  font-family: "Monaco",  monospace;
+}
+
+h3 {
+  color: hotpink;
+  font-family: "Monaco",  monospace;
+  font-size: 20px;
+}
+
+p {
+  color: lightpink;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+table {
+  color: lightpink;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: left;
+}
+
+ul {
+  color: lightpink;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+p.one {
+  border-style: inset;
+  border-color: lightpink;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: outset;
+  border-color: lightpink;
+  border-width: 5px;
+} 
+
+a:visited {
+  color: lightpink;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  
-  h1 {
-    color: white;
-    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
