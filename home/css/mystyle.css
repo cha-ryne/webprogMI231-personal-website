@@ -62,10 +62,6 @@ div.gallery img {
   height: auto;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
   padding: 0 6px;
   float: left;
