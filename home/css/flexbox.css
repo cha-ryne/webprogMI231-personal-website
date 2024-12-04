@@ -1,14 +1,90 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: DodgerBlue;
-  }
-   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 15px;
-  }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  background-color: lightpink;
+  align-items: center;
+  justify-content: center;
+}
+.cards img {
+  margin: 10px;
+  border: 3px solid black;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 23vw;
+}
+
+.wrapper {
+display: flex;  
+flex-flow: row wrap;
+font-weight: bold;
+text-align: center; 
+}
+
+.wrapper > * {
+padding: 10px;
+flex: 1 100%;
+}
+
+.header {
+background: black;
+color: hotpink;
+}
+
+.footer {
+background: black;
+color: hotpink;
+}
+
+.main {
+text-align: middle;
+background: black;
+color: hotpink;
+}
+
+.aside-1 {
+background: black;
+color: hotpink;
+text-align: left; 
+}
+
+.aside-2 {
+background: black;
+color: hotpink;
+text-align: left; 
+}
+
+.aside-3 {
+background: black;
+color: hotpink;
+text-align: right; 
+}
+
+.aside-4 {
+background: black;
+color: hotpink;
+text-align: right; 
+}
+
+a:visited {
+color: hotpink;
+}
+
+@media all and (min-width: 600px) {
+.aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+.main    { flex: 3 0px; }
+.aside-1 { order: 1; } 
+.main    { order: 3; }
+.aside-2 { order: 2; }
+.aside-3 { order: 4; }
+.aside-4 { order: 5; }
+.footer  { order: 6; }
+}
+
+body {
+padding: 2em; 
+}
