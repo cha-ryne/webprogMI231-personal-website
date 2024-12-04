@@ -4,13 +4,13 @@
   align-items: flex-start;
   flex-direction: row;
   max-height: 100vh;
-  background-color: lightpink;
+  background-color: black;
   align-items: center;
   justify-content: center;
 }
 .cards img {
   margin: 10px;
-  border: 3px solid black;
+  border: 3px solid hotpink;
   box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
   max-width: 23vw;
 }
@@ -30,6 +30,7 @@ flex: 1 100%;
 .header {
 background: black;
 color: hotpink;
+font-family: "Monaco",  monospace;
 }
 
 .footer {
