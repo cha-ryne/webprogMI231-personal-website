@@ -1,0 +1,91 @@
+body {
+    margin:100px;
+    background-color: lightpink;
+  }
+  
+  .portfolio {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "projects"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .header {
+    grid-area: header;
+    border-radius: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: hotpink;
+    font-family: "Monaco",  monospace;
+  }
+  
+  .projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: hotpink;
+    font-family: "Monaco",  monospace;
+  }
+  
+  
+  .project-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: black;
+    color: hotpink;
+    font-family: "Monaco",  monospace;
+  }
+  
+  .footer {
+    border-radius: 10px;
+    grid-area: footer;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: hotpink;
+    font-family: "Monaco",  monospace;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards img {
+    margin: 10px;
+    border: 3px solid hotpink;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+    border-radius: 10px;
+  }
+  
+  a:visited {
+    color: hotpink;
+  }
+  
