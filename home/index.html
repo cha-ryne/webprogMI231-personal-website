@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bootstrap Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
+<title>Page Title</title>
+<style>
+table, th, td
+</style>
 </head>
-
 <body>
-<div class="container-fluid mt-3">
-    <h1>Personal Profile Web page </h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md bg-primary text-white" style="background-color: black !important;" >1 of 2 <p>About Me</p>
-        <p><a target="_blank" href="https://media.licdn.com/dms/image/v2/D4D03AQFdClyGWq_oSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715780431331?e=1738195200&v=beta&t=cmk_6OJZCwP15FuD550-EHKHykdbgkC72eMmhHg9UW0">
+
+  <div class="portfolio">
+  <header class="header"><h1>Personal Profile Web page</h1></header>
+  <section class="projects">
+    <div class="project">
+      <div class="project-info">
+        <h3>About Me</h3>
+        <a target="_blank" href="https://media.licdn.com/dms/image/v2/D4D03AQFdClyGWq_oSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715780431331?e=1738195200&v=beta&t=cmk_6OJZCwP15FuD550-EHKHykdbgkC72eMmhHg9UW0">
       <img src="https://media.licdn.com/dms/image/v2/D4D03AQFdClyGWq_oSg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715780431331?e=1738195200&v=beta&t=cmk_6OJZCwP15FuD550-EHKHykdbgkC72eMmhHg9UW0" width="168" height="168">
-</a></p>
-
-<p>Charijoy Cempron</p>
-<p>Cha/ri, Kakay, Acerola</p>
-<p>Metro Manila, Philippines</p>
-<p><a href="https://www.linkedin.com/in/charijoy-cempron-0b6950281/">LinkedIn profile</a></p>
-
-        </div>
-        <div class="col-md bg-dark text-white" style="background-color: hotpink !important;">2 of 2 <p>Educational Background</p>
+</a>
+  <p>Charijoy Cempron</p>
+  <p>Cha/ri, Kakay, Acerola</p>
+  <p>Metro Manila, Philippines</p>
+  <p><a href="https://www.linkedin.com/in/charijoy-cempron-0b6950281/">LinkedIn profile</a></p>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-info">
+        <h3>Educational Background </h3>
         <table>
   <tr>
-    <th>Secondary</th>
+    <td>Secondary</td>
   </tr>
   <tr>
     <td>St. Ives School</td>
@@ -35,17 +37,16 @@
     <tr>
     <td>Severina Subd. Bagumbayan, Taguig City</td>
   </tr>
-      <tr>
-    <td>With Honors</td>
-  </tr>
     <tr>
     <td>SY 2017-2023</td>
   </tr>
+    <tr>
+    <td>With Honors</td>
+  </tr>
 </table>
-
-<p><table>
+<table>
   <tr>
-    <th>Tertiary</th>
+    <td>Tertiary</td>
   </tr>
   <tr>
     <td>Asia Pacific College</td>
@@ -53,43 +54,41 @@
     <tr>
     <td>Humabon St. Magallanes, Makati City</td>
   </tr>
-      <tr>
-    <td>Bachelor of Science in Information Technology with Specialization in Mobile Internet</td>
-  </tr>
     <tr>
     <td>SY 2023-Present</td>
   </tr>
-</table></p>
-        </div>
-      </div>  
+    <tr>
+    <td>Bachelor of Science in Information Technology with Specialization in Mobile Internet</td>
+  </tr>
+</table>
+      </div>
     </div>
-    <br>
-    
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md bg-dark text-white" style="background-color: black !important;">1 of 4 <p>IT Experience</p>
-        <p>
-    <ul>
+    <div class="project">
+      <div class="project-info">
+        <h3>IT Experience</h3>
+           <ul>
         <li>Basic Java</li>
         <li>Basic Python</li>
         <li>Code Combat</li>
     </ul>
-</p>
-        </div>
-        <div class="col-md bg-primary text-white" style="background-color: black !important;">2 of 4 <p>Hobbies & Interests</p>
-        <p>
-    <ul>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-info">
+        <h3>Hobbies & Interests</h3>
+            <ul>
         <li>Blackpink (Jennie Kim)</li>
         <li>Mangas/Manhwas/Manhuas (Just Twilight, Sakamoto Days, The Return of the 
             Crazy Demon)</li>
         <li>Animes (Zom 100: Bucketlist of the Dead, Chainsaw Man)</li>
         <li>Pirates of the Carribean</li>
     </ul>
-</p>
-        </div>
-        <div class="col-md bg-dark text-white" style="background-color: hotpink !important;">3 of 4 <p>Goals In Life</p>
-        <p>
-    <ul>
+      </div>
+    </div>
+    <div class="project">
+      <div class="project-info">
+        <h3>Goals in Life</h3>
+        <ul>
         <li>Have successful businesses</li>
         <li>Be a model at least once</li>
         <li>Master a musical instrument</li>
@@ -99,19 +98,17 @@
         <li>Be active in fitness and gym</li>
         <li>Have a healthy skin, mind, and body</li>
     </ul>
-</p>
-        </div>
-        <div class="col-md bg-dark text-white" style="background-color: hotpink !important;">4 of 4 <p>Picture Gallery</p>
-  <p>
-  <main class="cards">
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><h3>Picture Gallery</h3>
+    <main class="cards">
   <img src="https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg" width="300" height="200" >
   <img src="https://i.pinimg.com/originals/fb/74/d7/fb74d7ea64686e2e22a89a229912b150.jpg" width="300" height="200" >
   <img src="https://preview.redd.it/new-wallpaper-for-my-pc-they-have-no-right-being-this-cool-v0-3l2k9lpytrcc1.jpeg?auto=webp&s=84fbc9925af40466495e023248afa37305b232fd" width="300" height="200" >
-</main> </p>
-
+</main>
+  </footer>
 </div>
 
-
-  
 </body>
 </html>
