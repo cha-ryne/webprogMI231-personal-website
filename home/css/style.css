@@ -1,3 +1,11 @@
+header {
+  background: linear-gradient(90deg, #f8bae3, #dc55ab, #F11EB6);
+  color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 body {
   margin:100px;
   background-color: lightpink;
