@@ -1,10 +1,3 @@
-header {
-  background: linear-gradient(90deg, #f8bae3, #dc55ab, #F11EB6);
-  color: white;
-  text-align: left;
-  padding: 20px;
-  border-radius: 10px;
-}
 
 body {
   margin:100px;
@@ -17,7 +10,7 @@ body {
     "header"
     "projects"
     "footer";
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto auto;
   gap: 20px;
   padding: 20px;
 }
@@ -25,8 +18,6 @@ body {
 .header {
   grid-area: header;
   border-radius: 10px;
-  background-color: #3498db;
-  color: white;
   padding: 20px;
   text-align: center;
   background: black;
@@ -67,8 +58,6 @@ body {
 .footer {
   border-radius: 10px;
   grid-area: footer;
-  background-color: #34495e;
-  color: white;
   padding: 20px;
   text-align: center;
   background: black;
@@ -95,4 +84,70 @@ body {
 
 a:visited {
   color: hotpink;
+}
+
+a:hover {
+  color: lightpink;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Monaco",  monospace;
+}
+
+.button1 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button1:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button2 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button2:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button3 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button3:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button4 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button4:hover {
+  background-color: hotpink;
+  color: black;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 3px;
 }
