@@ -14,16 +14,12 @@ new Vue({
     },
     data: {
       images: [
-        'https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg',
-        'https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg',
-        'https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg',
-        'https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg',
-        'https://preguides.com/images/3WEFh1H1DbUzbxDBYBRF1652927083.jpg',
-        'https://placekitten.com/806/800',
-        'https://placekitten.com/807/800',
-        'https://placekitten.com/808/800',
-        'https://placekitten.com/809/800',
-        'https://placekitten.com/810/800',
+        'images/Sakamoto.jpg',
+        'images/bp.jpg',
+        'images/Manga.jpg',
+        'images/pirates.jpg',
+        'https://preview.redd.it/new-wallpaper-for-my-pc-they-have-no-right-being-this-cool-v0-3l2k9lpytrcc1.jpeg?auto=webp&s=84fbc9925af40466495e023248afa37305b232fd',
+        'images/Chman.jpg',
       ],
       index: 0,
       showSlideshow: false

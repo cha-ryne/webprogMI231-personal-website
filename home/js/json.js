@@ -11,7 +11,8 @@ const json = {
             "scaleColorMode": "colored",
             "rateCount": 10,
             "rateMax": 10,
-            "displayMode": "buttons"
+            "displayMode": "buttons",
+            "isRequired": true
           }
         ]
       }
