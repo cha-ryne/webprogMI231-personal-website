@@ -19,6 +19,6 @@
     <ul>
       <li v-for="comment in comments" :key="comment.id">{{ comment.name }}  {{ comment.comment }}</li>
     </ul>
-  <h2>comments</h2>
+  <h2>comments </h2>
   </template>
   
