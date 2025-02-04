@@ -1,7 +1,7 @@
   <script setup>
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
-
+ 
   const comments = ref([])
 
   async function getComments() {
