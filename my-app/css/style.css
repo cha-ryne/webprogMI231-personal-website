@@ -1,0 +1,196 @@
+
+body {
+  margin: 100px;
+  background-image: url("https://i.pinimg.com/1200x/cf/86/76/cf8676ee093d36709d9ef78ac806df30.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "projects"
+    "footer";
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: hotpink;
+  font-family: "Monaco",  monospace;
+  background: black;
+}
+
+.tenor-gif-embed {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  border-radius: 10px; 
+  overflow: hidden;
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: hotpink;
+  font-family: "Monaco",  monospace;
+}
+
+
+.project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: black;
+  color: hotpink;
+  font-family: "Monaco",  monospace;
+}
+
+.footer {
+  border-radius: 10px;
+  grid-area: footer;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: hotpink;
+  font-family: "Monaco",  monospace;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%; /* Ensure the container takes full width */
+  height: auto; /* Adjust height as needed */
+  align-items: center;
+  justify-content: center;
+}
+.cards img {
+  margin: 10px;
+  border: 3px solid hotpink;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  width: 240px; /* Increase width */
+  height: 300px; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+a:visited {
+  color: hotpink;
+}
+
+a:hover {
+  color: lightpink;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: "Monaco",  monospace;
+}
+
+.button1 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button1:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button2 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button2:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button3 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button3:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+.button4 {
+  background-color: black; 
+  color: lightpink; 
+}
+
+.button4:hover {
+  background-color: hotpink;
+  color: black;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.project-info img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-info img:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Text Animations */
+h1, h3 {
+  font-family: "Monaco", monospace;
+  color: hotpink;
+  transition: color 0.3s;
+}
+
+h1:hover, h3:hover {
+  color: lightpink;
+}
+
+/* Transitions for Smooth Changes */
+.project-info {
+  transition: background-color 0.3s, color 0.3s;
+}
+
