@@ -21,7 +21,8 @@ export default defineConfig({
         main: 'index.html',
         interests: 'public/interests.html',
         survey: 'public/survey.html',
-        resources: 'public/resources.html'
+        resources: 'public/resources.html',
+        index: 'public/index.html'
       }
     }
   }
