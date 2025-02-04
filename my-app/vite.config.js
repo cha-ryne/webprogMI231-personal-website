@@ -19,9 +19,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        interests: 'interests.html',
-        survey: 'survey.html',
-        resources: 'resources.html'
+        interests: 'public/interests.html',
+        survey: 'public/survey.html',
+        resources: 'public/resources.html'
       }
     }
   }
