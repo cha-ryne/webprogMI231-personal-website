@@ -39,7 +39,22 @@
         </footer>
 
       </div>
-  <script type="module" src="../src/main.js"></script>
+      <script type="module">
+        import { createApp } from "vue";
+        import { Model } from "survey-core";
+        import { Survey } from "survey-vue3-ui";
+        import { json } from "../src/components/json.js";
+    
+        const survey = new Model(json);
+        const app = createApp({
+          components: { Survey },
+          template: '<Survey :model="survey" />',
+          setup() {
+            return { survey };
+          }
+        });
+        app.mount("#app");
+      </script>
 
 
 
