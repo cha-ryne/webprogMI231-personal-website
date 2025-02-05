@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="importmap">
-    {
-      "imports": {
-        "vue": "https://unpkg.com/vue@3.3.4/dist/vue.esm-browser.js",
-        "survey-core": "https://unpkg.com/survey-core@1.12.21/survey.core.min.js",
-        "survey-vue": "https://unpkg.com/survey-vue@1.9.113/survey.vue.min.js"
-      }
-    }
-  </script>
-  <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Charijoy</title>
 </head>
 <body>
@@ -38,37 +28,6 @@
         <footer class="footer"><h3>Thank you.</h3>
         </footer>
     </div>
-    <script type="module">
-        import { createApp } from "vue";
-        import { SurveyModel } from 'survey-core';
-        import { Survey } from 'survey-vue';
 
-        const surveyJson = {
-          pages: [{
-            elements: [{
-              type: "rating",
-              name: "satisfaction",
-              title: "How satisfied are you with the website?",
-              rateMin: 0,
-              rateMax: 5
-            }]
-          }]
-        };
-
-        const survey = new SurveyModel(surveyJson);
-        survey.onComplete.add((sender) => {
-          console.log(JSON.stringify(sender.data, null, 3));
-        });
-
-        const app = createApp({
-          components: { Survey },
-          setup() {
-            return { survey };
-          },
-          template: '<Survey :model="survey" />'
-        });
-
-        app.mount("#app");
-    </script>
 </body>
 </html>
