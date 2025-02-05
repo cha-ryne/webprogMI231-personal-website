@@ -5,5 +5,9 @@
   "scripts": {
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "survey-vue": "^1.12.21",
+    "vue": "^3.5.13"
   }
 }
