@@ -5,12 +5,12 @@
     {
       "imports": {
         "vue": "https://unpkg.com/vue@3.3.4/dist/vue.esm-browser.js",
-        "survey-core": "https://unpkg.com/survey-core@1.9.94/survey.core.min.js",
-        "survey-vue3-ui": "https://unpkg.com/survey-vue3-ui@1.9.94/survey-vue3-ui.min.js"
+        "survey-core": "https://unpkg.com/survey-core@1.12.21/survey.core.min.js",
+        "survey-vue": "https://unpkg.com/survey-vue@1.9.113/survey.vue.min.js"
       }
     }
   </script>
-  <link href="https://unpkg.com/survey-core@1.9.94/defaultV2.min.css" type="text/css" rel="stylesheet">
+  <link href="https://unpkg.com/survey-core/defaultV2.min.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <title>Charijoy</title>
 </head>
@@ -18,9 +18,9 @@
     <div class="portfolio">
         <header class="header">
           <div class="tenor-gif-embed" data-postid="26157329" data-share-method="host" data-aspect-ratio="1.28" data-width="15%">
-  <a href="https://tenor.com/view/nagumo-sakamoto-days-gif-26157329">Nagumo Sakamoto GIF</a> from <a href="https://tenor.com/search/nagumo-gifs">Nagumo GIFs</a>
-</div>
-<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <a href="https://tenor.com/view/nagumo-sakamoto-days-gif-26157329">Nagumo Sakamoto GIF</a> from <a href="https://tenor.com/search/nagumo-gifs">Nagumo GIFs</a>
+          </div>
+          <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
           <h1>Hallo!</h1>
           <a href="index.html"><button class="button button1">Start</button></a>
           <a href="interests.html"><button class="button button2">Interests</button></a>
@@ -31,33 +31,44 @@
             <div class="project">
                 <div class="project-info">
                   <h3>Take the survey below</h3>
-                  <div id="app"  style="background-color: black; color: hotpink;"></div>
+                  <div id="app" style="background-color: black; color: hotpink;"></div>
                 </div>
               </div>
         </section>
         <footer class="footer"><h3>Thank you.</h3>
         </footer>
-
-      </div>
-      <script type="module">
+    </div>
+    <script type="module">
         import { createApp } from "vue";
-        import { Model } from "survey-core";
-        import { Survey } from "survey-vue3-ui";
-        import { json } from "../src/components/json.js";
-    
-        const survey = new Model(json);
+        import { SurveyModel } from 'survey-core';
+        import { Survey } from 'survey-vue';
+
+        const surveyJson = {
+          pages: [{
+            elements: [{
+              type: "rating",
+              name: "satisfaction",
+              title: "How satisfied are you with the website?",
+              rateMin: 0,
+              rateMax: 5
+            }]
+          }]
+        };
+
+        const survey = new SurveyModel(surveyJson);
+        survey.onComplete.add((sender) => {
+          console.log(JSON.stringify(sender.data, null, 3));
+        });
+
         const app = createApp({
           components: { Survey },
-          template: '<Survey :model="survey" />',
           setup() {
             return { survey };
-          }
+          },
+          template: '<Survey :model="survey" />'
         });
+
         app.mount("#app");
-      </script>
-
-
-
-    
+    </script>
 </body>
 </html>
