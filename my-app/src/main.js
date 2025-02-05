@@ -1,10 +1,19 @@
-import Vue from "vue";
-import SurveyComponent from "./components/SurveyComponent";
+import { createApp } from 'vue'
+import { Model } from 'survey-core'
+import { Survey } from 'survey-vue3-ui'
+import { json } from './components/json'
 
-new Vue({
-    el: "#app",
-    template: '<div id="surveyElement" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; min-height: 100%; height:100%"> <survey-component /></div>',
-    component: {
-        "survey-component": SurveyComponent
+const survey = new Model(json)
+const app = createApp({
+  data() {
+    return {
+      survey: survey
     }
-});
+  },
+  components: {
+    Survey
+  },
+  template: '<Survey :model="survey" />'
+})
+
+app.mount('#app')

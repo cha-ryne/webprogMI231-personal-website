@@ -1,26 +1,14 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "@supabase/supabase-js": "^2.48.1",
-    "vue": "^3.5.13",
     "@vue/cli-plugin-babel": "4.1.1",
+    "vue": "^2.6.14",
     "survey-vue": "latest"
   },
   "description": "SurveJS Vue.js example starter project",
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "vite": "^6.0.11",
-    "vite-plugin-vue-devtools": "^7.7.0",
     "@vue/cli-plugin-eslint": "4.1.1",
     "@vue/cli-service": "4.1.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "name": "my-app"
 }

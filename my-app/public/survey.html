@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="robots" content="noindex">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://unpkg.com/survey-core@1.12.18/survey.core.min.js"></script>
-  <script src="https://unpkg.com/survey-core@1.12.18/survey.i18n.min.js"></script>
-  <script src="https://unpkg.com/survey-core@1.12.18/themes/index.min.js"></script>
-  <script src="https://unpkg.com/survey-js-ui@1.12.18/survey-js-ui.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/survey-core@1.12.18/defaultV2.min.css" />
-  <link rel="stylesheet" href="/css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3.3.4/dist/vue.esm-browser.js",
+        "survey-core": "https://unpkg.com/survey-core@1.9.94/survey.core.min.js",
+        "survey-vue3-ui": "https://unpkg.com/survey-vue3-ui@1.9.94/survey-vue3-ui.min.js"
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/survey-core@1.9.94/defaultV2.min.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Charijoy</title>
 </head>
 <body>
@@ -36,8 +39,7 @@
         </footer>
 
       </div>
-      <script src="../src/main.js"></script>
-
+  <script type="module" src="../src/main.js"></script>
 
 
 
