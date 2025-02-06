@@ -1,14 +1,5 @@
 {
-  "devDependencies": {
-    "vite": "^6.0.11"
-  },
-  "scripts": {
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "survey-vue": "^1.12.21",
-    "survey-vue3-ui": "^1.12.22",
-    "vue": "^3.5.13"
+    "@supabase/supabase-js": "^2.48.1"
   }
 }
