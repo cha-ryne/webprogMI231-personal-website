@@ -3,6 +3,7 @@
 <head>
   <meta name="robots" content="noindex">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://unpkg.com/survey-core@1.12.18/survey.core.min.js"></script>
   <script src="https://unpkg.com/survey-core@1.12.18/survey.i18n.min.js"></script>
   <script src="https://unpkg.com/survey-core@1.12.18/themes/index.min.js"></script>
@@ -35,9 +36,18 @@
         <footer class="footer"><h3>Thank you.</h3>
         </footer>
     </div>
-
-<script src="../js/json.js"></script>
-<script src="../js/survey.js"></script>
+    <script>
+      window.supabaseClient = supabase.createClient(
+          'https://xhsptturvttitkhfyvhh.supabase.co',
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhoc3B0dHVydnR0aXRraGZ5dmhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc5NzA3MTIsImV4cCI6MjA1MzU0NjcxMn0.8iJz3JyEYOzAswXfoAWwXu2T5Rver2H4xRM1-e5wzKU'
+      );
+  </script>
+    <!-- Load survey configuration -->
+    <script src="../js/json.js"></script>
+    <!-- Load Supabase client functions -->
+    <script src="../js/supabaseClient.js"></script>
+    <!-- Load survey initialization -->
+    <script src="../js/survey.js"></script>
 
 </body>
 </html>
